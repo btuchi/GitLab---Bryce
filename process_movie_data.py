@@ -19,7 +19,7 @@ def find_top_n(filename, n=5):
         row["Gross"] = int(row["Gross"])
         row["Year"] = int(row["Release Date"][:4])
 
-    # Sort data and get top 10
+    # Sort data and get top n
     gross_sort = lambda x : x["Gross"]
     rows.sort(key=gross_sort)
     top_n = rows[:-(n+1):-1]
