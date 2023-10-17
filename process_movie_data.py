@@ -3,11 +3,11 @@
 import csv
 
 
-def find_top_n(filename, n=5):
+def find_top_n(filename, n=10):
     """Finds the top n highest grossing movies in a CSV dataset.
        Input: filename, a string - points to filename of dataset
        Output: None
-       Effect: should print five lines of text
+       Effect: should print 10 lines of text
     """
     # read in file contents as list of dictionaries
     with open(filename) as f:
